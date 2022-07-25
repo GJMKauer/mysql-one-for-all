@@ -59,7 +59,7 @@ CREATE TABLE SpotifyClone.follow_list(
 
 INSERT INTO SpotifyClone.artists(artist_name)
 VALUES
-	  ('Walter Phoenix'),
+	('Walter Phoenix'),
     ('Peter Strong'),
     ('Lance Day'),
     ('Freedie Shannon'),
@@ -68,7 +68,7 @@ VALUES
     
 INSERT INTO SpotifyClone.albums(album_name, artist_id, release_year)
 VALUES
-	  ('Envious', 1, 1990),
+	('Envious', 1, 1990),
     ('Exuberant', 1, 1993),
     ('Hallowed Steam', 2, 1995),
     ('Incandescent', 3, 1998),
@@ -81,15 +81,15 @@ VALUES
     
 INSERT INTO SpotifyClone.plans(plan_type, plan_value)
 VALUES
-	  ('gratuito', 0),
+	('gratuito', 0),
     ('familiar', 7.99),
     ('universitário', 5.99),
     ('pessoal', 6.99);
     
 INSERT INTO SpotifyClone.songs(song_name, artist_id, album_id, song_duration)
 VALUES
-	  ('Soul For Us', 1, 1, 200),
-    ('Reflections of Magic', 1, 1, 163),
+	('Soul For Us', 1, 1, 200),
+    ('Reflections Of Magic', 1, 1, 163),
     ('Dance With Her Own', 1, 1, 116),
     ('Troubles Of My Inner Fire', 1, 2, 203),
     ('Time Fireworks', 1, 2, 152),
@@ -131,7 +131,7 @@ VALUES
     
 INSERT INTO SpotifyClone.users(user_name, user_age, sign_date, plan_id)
 VALUES
-	  ('Thati', 23, '2019-10-20', 1),
+	('Thati', 23, '2019-10-20', 1),
     ('Cintia', 35, '2017-12-30', 2),
     ('Bill', 20, '2019-06-05', 3),
     ('Roger', 45, '2020-05-13', 4),
@@ -144,7 +144,7 @@ VALUES
 
 INSERT INTO SpotifyClone.reproduction_history(user_id, song_id, reproduction_date)
 VALUES
-	  (1, 36, '2020-02-28 10:45:55'),
+	(1, 36, '2020-02-28 10:45:55'),
     (1, 25, '2020-05-02 05:30:35'),
     (1, 23, '2020-03-06 11:22:33'),
     (1, 14, '2020-08-05 08:05:17'),
@@ -185,7 +185,7 @@ VALUES
 
 INSERT INTO SpotifyClone.follow_list(user_id, artist_id)
 VALUES
-	  (1, 1),
+	(1, 1),
     (1, 4),
     (1, 3),
     (2, 1),
