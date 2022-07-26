@@ -1,5 +1,6 @@
 SELECT 
     s.song_name AS nome, COUNT(rh.song_id) AS reproducoes
+    -- GK
 FROM
     SpotifyClone.songs AS s
         INNER JOIN

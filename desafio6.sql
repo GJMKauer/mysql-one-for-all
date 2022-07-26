@@ -3,6 +3,7 @@ SELECT
     MAX(p.plan_value) AS faturamento_maximo,
     CAST(AVG(plan_value) AS DECIMAL (5 , 2 )) AS faturamento_medio,
     SUM(p.plan_value) AS faturamento_total
+    -- GK
 FROM
     SpotifyClone.plans AS p
         INNER JOIN

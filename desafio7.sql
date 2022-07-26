@@ -2,6 +2,7 @@ SELECT DISTINCT
     ar.artist_name AS artista,
     al.album_name AS album,
     COUNT(DISTINCT fl.user_id) AS seguidores
+    -- GK
 FROM
     SpotifyClone.artists AS ar
         INNER JOIN

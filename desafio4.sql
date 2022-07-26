@@ -4,6 +4,7 @@ SELECT DISTINCT
         WHEN MAX(YEAR(reproduction_date)) = 2021 THEN 'Usuário ativo'
         ELSE 'Usuário inativo'
     END AS condicao_usuario
+    -- GK
 FROM
     SpotifyClone.users AS u
         INNER JOIN

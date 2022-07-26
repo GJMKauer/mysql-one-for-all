@@ -2,6 +2,7 @@ SELECT
     COUNT(DISTINCT s.song_name) AS cancoes,
     COUNT(DISTINCT a.artist_name) AS artistas,
     COUNT(DISTINCT al.album_name) AS albuns
+    -- GK
 FROM
     SpotifyClone.songs AS s
         INNER JOIN

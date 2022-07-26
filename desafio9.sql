@@ -1,5 +1,6 @@
 SELECT 
     COUNT(u.user_name) AS quantidade_musicas_no_historico
+    -- GK
 FROM
     SpotifyClone.users AS u
         INNER JOIN

@@ -9,13 +9,7 @@ SELECT
     END AS novo_nome
 FROM
     SpotifyClone.songs
-WHERE
-    song_name IN (
-    'Dance With Her Own',
-    "Let's Be Silly",
-	'Magic Circus',
-	'Troubles Of My Inner Fire',
-	'Without My Streets'
-    )
 GROUP BY song_name
+-- Com a ajuda do Takashi, lembrei do uso do Having.
+HAVING song_name <> novo_nome
 ORDER BY novo_nome;
