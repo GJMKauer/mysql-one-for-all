@@ -20,9 +20,9 @@ Neste projeto, fui capaz de:
 
 Nesse projeto, recebemos uma tabela não normalizada simulando uma "mini-Spotify". Os dados estavam dispostos de uma forma "randômica", de modo que não podiam ser consultados e/ou inseridos normalmente no banco de dados. Assim, tivemos que realizar toda a normalização seguindo a Terceira Forma Normal, conforme aprendemos. Abaixo segue um pequeno esboço de como foi feita essa normalização. Na primeira imagem, temos a tabela não normalizada, como a recebemos. Na segunda e terceira imagem, já contamos com a normalização e população da tabela realizada, considerando tabelas intermediárias e o uso de Primary Keys e Foreign Keys para sua construção.
 
-[Tabela-Não-Normalizada](./images//non-normalized-table.jpeg)
-[Tabela-Normalizada-1](./images//normalized-table-1.jpeg)
-[Tabela-Normalizada-2](./images//normalized-table-2.jpeg)
+![Tabela-Não-Normalizada](./images//non-normalized-table.jpeg)
+![Tabela-Normalizada-1](./images//normalized-table-1.jpeg)
+![Tabela-Normalizada-2](./images//normalized-table-2.jpeg)
 
 Após toda a normalização da tabela, tivemos que criar o Banco de Dados no MySQL e realizar toda a população dele de acordo com os dados fornecidos nessa planilha, com o uso de comandos como CREATE TABLE e INSERT INTO. Vocẽ pode acessar o arquivo com a tabela não normalizada e sua normalização [aqui](https://docs.google.com/spreadsheets/d/1-OUTrruCH4EKDaO8d7BYLf9NWlXiD5ZCcjmWB9SvoLg/edit?usp=sharing).
 
