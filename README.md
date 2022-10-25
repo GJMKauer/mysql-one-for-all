@@ -30,15 +30,46 @@ Após toda a normalização da tabela, tivemos que criar o Banco de Dados no MyS
 
 # Funcionamento da aplicação
 
-Para iniciar o projeto, é necessário possuir o [Docker](https://docs.docker.com/engine/install/ubuntu/) instalado.
-
-Para rodar o projeto, é necessário executar o comando
-```
-docker-compose up -d
-```
-na raíz do projeto. Isso fará com que os containers docker sejam orquestrados e a aplicação esteja disponível. Esse comando deve ser executado via terminal dentro do diretório onde está o arquivo **docker-compose.yml**.
+Para iniciar o projeto, é necessário possuir o [Docker](https://docs.docker.com/engine/install/ubuntu/) e o [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) instalados no computador.
 
 O projeto trata-se de um desafio para consolidar nosso aprendizado com normalização de tabelas, criação de tabelas com inserção de dados no MySQL e também a utilização de JOINs e demais comandos do MySQL para realizar buscas em nosso banco de dados.
+
+Após clonar o projeto em seu computador, para iniciá-lo é necessário executar o comando
+```
+docker-compose up -d && docker exec -it one_for_all bash
+```
+e na sequência
+```
+npm install
+```
+
+na pasta raíz do projeto. Isso fará com que os containers docker sejam orquestrados e a aplicação esteja disponível. Após isso, será necessário restaurar o banco de dados `SpotifyClone` para rodar os comandos.
+
+<br>
+
+<details>
+  <summary><strong>🗒️ Instruções para restaurar o banco de dados `SpotifyClone`</strong></summary><br />
+
+1. Faça o download do arquivo de backup [aqui](desafio1.sql) clicando em "Raw", depois clicando com botão direito e selecionando "Salvar como" para salvar o arquivo em seu computador.
+2. Abra o arquivo com algum editor de texto e selecione todo o conteúdo do arquivo usando `CTRL-A`.
+3. Abra o MySQL Workbench.
+4. Crie uma conexão local no MySQL Workbench utilizando o hostname `localhost`, a porta `3306`, o usuário `root` e a senha `password`.
+5. Abra uma nova janela de query e cole dentro dela todo o conteúdo do arquivo `desafio1.sql`.
+6. Selecione todo o código com o atalho `CTRL-A` e depois clique no ícone de raio para executar a query.
+
+    ![Restaurando o banco SpotifyClone](images/restore_spotifyclone.png)
+7. Aguarde alguns segundos (espere em torno de 30 segundos antes de tentar fazer algo).
+8. Clique no botão apontado na imagem a seguir para atualizar a listagem de banco de dados.
+
+    ![Tabelas do banco SpotifyClone](images/refresh_databases.png)
+
+</details>
+
+<br>
+
+Feita a restauração do banco, você pode executar as _queries_ descritas em cada arquivo `desafioN.sql` desse projeto.
+
+<br> 
 
 ---
 
